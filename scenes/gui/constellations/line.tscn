@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bfnyjb234soj8"]
+
+[ext_resource type="Script" uid="uid://bvhi3nofh04qx" path="res://scenes/gui/constellations/line.gd" id="1_jhwsr"]
+
+[node name="line" type="Node2D"]
+script = ExtResource("1_jhwsr")
