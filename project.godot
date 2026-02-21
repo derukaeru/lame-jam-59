@@ -14,6 +14,18 @@ config/name="lame-jam-59"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*res://misc/scripts/global.gd"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
+
+[gui]
+
+theme/custom_font="uid://cjrjvb6aj7tvw"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
