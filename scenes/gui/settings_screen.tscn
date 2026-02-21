@@ -1,8 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://ild61ihsg08f"]
+[gd_scene load_steps=9 format=3 uid="uid://ild61ihsg08f"]
 
 [ext_resource type="Script" uid="uid://hrgjkwjs4lcp" path="res://scenes/gui/settings_screen.gd" id="1_wqbck"]
-[ext_resource type="Script" uid="uid://bvhi3nofh04qx" path="res://scenes/gui/constellations/line.gd" id="2_wtq5m"]
-[ext_resource type="Script" uid="uid://cdvms1oskvejd" path="res://scenes/gui/constellations/star.gd" id="3_1g5r7"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wtq5m"]
 
@@ -37,97 +35,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.1254902, 0.03137255, 0.08627451, 1)
-
-[node name="stars" type="Control" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="StarLine" type="Node2D" parent="stars" node_paths=PackedStringArray("node_a", "node_b")]
-position = Vector2(76.15648, 169.38988)
-script = ExtResource("2_wtq5m")
-node_a = NodePath("../Star")
-node_b = NodePath("../Star2")
-metadata/_custom_type_script = "uid://bvhi3nofh04qx"
-
-[node name="StarLine2" type="Node2D" parent="stars" node_paths=PackedStringArray("node_a", "node_b")]
-position = Vector2(60.156475, 209.38988)
-script = ExtResource("2_wtq5m")
-node_a = NodePath("../Star2")
-node_b = NodePath("../Star3")
-metadata/_custom_type_script = "uid://bvhi3nofh04qx"
-
-[node name="StarLine3" type="Node2D" parent="stars" node_paths=PackedStringArray("node_a", "node_b")]
-position = Vector2(433, 127)
-script = ExtResource("2_wtq5m")
-node_a = NodePath("../Star4")
-node_b = NodePath("../Star5")
-metadata/_custom_type_script = "uid://bvhi3nofh04qx"
-
-[node name="StarLine4" type="Node2D" parent="stars" node_paths=PackedStringArray("node_a", "node_b")]
-position = Vector2(481, 111)
-script = ExtResource("2_wtq5m")
-node_a = NodePath("../Star5")
-node_b = NodePath("../Star6")
-metadata/_custom_type_script = "uid://bvhi3nofh04qx"
-
-[node name="Star" type="Node2D" parent="stars"]
-position = Vector2(113, 160)
-script = ExtResource("3_1g5r7")
-metadata/_custom_type_script = "uid://cdvms1oskvejd"
-
-[node name="Star2" type="Node2D" parent="stars"]
-position = Vector2(47, 229)
-script = ExtResource("3_1g5r7")
-metadata/_custom_type_script = "uid://cdvms1oskvejd"
-
-[node name="Star3" type="Node2D" parent="stars"]
-position = Vector2(108, 258)
-script = ExtResource("3_1g5r7")
-metadata/_custom_type_script = "uid://cdvms1oskvejd"
-
-[node name="Star4" type="Node2D" parent="stars"]
-position = Vector2(405, 89)
-script = ExtResource("3_1g5r7")
-metadata/_custom_type_script = "uid://cdvms1oskvejd"
-
-[node name="Star5" type="Node2D" parent="stars"]
-position = Vector2(476, 138)
-script = ExtResource("3_1g5r7")
-metadata/_custom_type_script = "uid://cdvms1oskvejd"
-
-[node name="Star6" type="Node2D" parent="stars"]
-position = Vector2(434, 221)
-script = ExtResource("3_1g5r7")
-speed = 0.1
-metadata/_custom_type_script = "uid://cdvms1oskvejd"
-
-[node name="Star7" type="Node2D" parent="stars"]
-position = Vector2(80, 69)
-script = ExtResource("3_1g5r7")
-speed = 0.1
-metadata/_custom_type_script = "uid://cdvms1oskvejd"
-
-[node name="Star8" type="Node2D" parent="stars"]
-position = Vector2(299, 269)
-script = ExtResource("3_1g5r7")
-speed = 0.1
-metadata/_custom_type_script = "uid://cdvms1oskvejd"
-
-[node name="Star9" type="Node2D" parent="stars"]
-position = Vector2(162, 293)
-script = ExtResource("3_1g5r7")
-speed = 0.1
-metadata/_custom_type_script = "uid://cdvms1oskvejd"
-
-[node name="Star10" type="Node2D" parent="stars"]
-position = Vector2(241, 50)
-script = ExtResource("3_1g5r7")
-speed = 0.1
-metadata/_custom_type_script = "uid://cdvms1oskvejd"
 
 [node name="close" type="Button" parent="."]
 layout_mode = 0

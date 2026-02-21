@@ -11,12 +11,19 @@ config_version=5
 [application]
 
 config/name="lame-jam-59"
+run/main_scene="uid://cwn8ea14mrre7"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Global="*res://misc/scripts/global.gd"
+
+[display]
+
+window/size/viewport_width=512
+window/size/viewport_height=328
+window/stretch/mode="viewport"
 
 [editor_plugins]
 
@@ -28,5 +35,6 @@ theme/custom_font="uid://cjrjvb6aj7tvw"
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
