@@ -1,3 +1,31 @@
-[gd_scene format=3 uid="uid://by30m4l8g3ldi"]
+[gd_scene load_steps=4 format=4 uid="uid://by30m4l8g3ldi"]
+
+[ext_resource type="Texture2D" uid="uid://cfl4faul036ae" path="res://assets/sprites/tilemap/tilemap.png" id="1_eyte8"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7hipx"]
+texture = ExtResource("1_eyte8")
+0:0/0 = 0
+0:0/0/terrain_set = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -8, 8, 8, 8, 8, -8)
+1:0/0 = 0
+1:0/0/terrain_set = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, -8, 8, -8, -8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 8, 8, 8, 8, -8)
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 8, 8, -8, -8, -8)
+5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, 8, 8, -8)
+
+[sub_resource type="TileSet" id="TileSet_gr3xe"]
+physics_layer_0/collision_layer = 1
+terrain_set_0/mode = 0
+sources/0 = SubResource("TileSetAtlasSource_7hipx")
 
 [node name="level_template" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAFAAIAAAACAAAAAAAFAAMAAAABAAAAAAAFAAQAAAAEAAAAAAADAAIAAAADAAAAAAADAAMAAAABAAAAAAADAAQAAAAFAAAAAAAEAAIAAAABAAAAAAAEAAMAAAABAAAAAAAEAAQAAAABAAAAAAA=")
+tile_set = SubResource("TileSet_gr3xe")
